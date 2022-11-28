@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+            margin: 10px;
+            
+        }
+        img {
+            animation: moveAround;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            height: 50vh;
+        }
+        @keyframes moveAround {
+            0% {
+                transform: translateX(0px);
+            }
+            25% {
+                transform: rotateX(180deg) scale(2, 0.5);
+            }
+            50% {
+                transform: translateX(1000px) scale(0.5, 2);
+            }
+            75% {
+                transform: translateX(800px) translateY(600px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    </Style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/564x/30/fc/53/30fc53948ea442ba4cc52d5c00eedb5c.jpg">
+</body>
+</html>
